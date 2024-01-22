@@ -6,12 +6,13 @@
     <title>GGRadioFM</title>
     <style>
         body {
-            background-color: #000;
+            background: url('img/background.png') center/cover no-repeat;
             color: #fff;
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
             height: 100vh;
@@ -22,6 +23,8 @@
             padding: 20px;
             box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
             border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.7);
+            max-width: 80%;
         }
 
         iframe {
@@ -29,9 +32,15 @@
             min-height: 150px;
             border: 0;
         }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
     </style>
 </head>
 <body>
+    <h1>GGRadioFM</h1>
     <div class="iframe-container">
         <iframe src="https://panel.deepradio.co.uk/public/ggradiofm/embed?theme=dark" frameborder="0" allowtransparency="true"></iframe>
     </div>
