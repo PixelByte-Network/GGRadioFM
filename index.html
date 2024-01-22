@@ -17,16 +17,21 @@
             min-height: 100vh;
         }
 
-        header, footer {
-            background-color: rgba(0, 0, 0, 0.8);
-            width: 100%;
-            padding: 10px;
-            text-align: center;
+        .iframe-container {
+            border: 2px solid #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.7);
+            max-width: 80%;
+            margin-top: 20px;
+            margin-bottom: 20px;
         }
 
-        header h1 {
-            font-size: 24px;
-            margin-bottom: 10px;
+        iframe {
+            width: 100%;
+            min-height: 150px;
+            border: 0;
         }
 
         nav {
@@ -44,21 +49,16 @@
             margin: 0 15px;
         }
 
-        .iframe-container {
-            border: 2px solid #fff;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-            border-radius: 10px;
-            background-color: rgba(0, 0, 0, 0.7);
-            max-width: 80%;
-            margin-top: 20px; /* Adjust margin to create space for the player */
-            margin-bottom: 20px;
+        header, footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            width: 100%;
+            padding: 10px;
+            text-align: center;
         }
 
-        iframe {
-            width: 100%;
-            min-height: 150px;
-            border: 0;
+        header h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
         }
 
         footer {
@@ -67,15 +67,15 @@
     </style>
 </head>
 <body>
-    <div class="iframe-container">
-        <iframe src="https://panel.deepradio.co.uk/public/ggradiofm/embed?theme=dark" frameborder="0" allowtransparency="true"></iframe>
-    </div>
-
     <nav>
         <a href="#">Request Song</a>
         <a href="#">Discord</a>
         <a href="#">Donate</a>
     </nav>
+
+    <div class="iframe-container">
+        <iframe src="https://panel.deepradio.co.uk/public/ggradiofm/embed?theme=dark" frameborder="0" allowtransparency="true"></iframe>
+    </div>
 
     <header>
         <h1>GGRadioFM - Your Station, Your Music</h1>
@@ -86,4 +86,3 @@
     </footer>
 </body>
 </html>
-
