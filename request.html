@@ -1,76 +1,78 @@
 <head>
-<style>
-body {
-            background: url('img/background.png') center/cover no-repeat;
-            color: #fff;
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            min-height: 100vh;
-}
-          header, footer {
-            background-color: rgba(0, 0, 0, 0.8);
-            width: 100%;
-            padding: 10px;
-            text-align: center;
-            margin-bottom: 0;
-        }
+  <style>
+    body {
+      background: url('img/background.png') center/cover no-repeat;
+      color: #fff;
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
 
-        header h1 {
-            font-size: 24px;
-            margin-bottom: 10px;
-            margin-top: 0;
-        }
+    header, footer {
+      background-color: rgba(0, 0, 0, 0.8);
+      width: 100%;
+      padding: 10px;
+      text-align: center;
+      margin-bottom: 0;
+    }
 
-        nav {
-            display: flex;
-            justify-content: center;
-            width: 100%;
-            background-color: rgba(0, 0, 0, 0.7);
-            padding: 10px;
-            margin-top: 0;
-        }
+    header h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      margin-top: 0;
+    }
 
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 18px;
-            margin: 0 15px;
-        }
+    nav {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 10px;
+      margin-top: 0;
+    }
 
-         .iframe-container {
-            border: 2px solid #fff;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-            border-radius: 10px;
-            background-color: rgba(0, 0, 0, 0.7);
-            max-width: 150%;
-            margin-top: 20px;
-            margin-bottom: 20px;
-        }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+      margin: 0 15px;
+    }
 
-        iframe {
-            width: 150%;
-            min-height: 150px;
-            border: 0;
-        }
-      </style>
+    .iframe-container {
+      border: 2px solid #fff;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+      border-radius: 10px;
+      background-color: rgba(0, 0, 0, 0.7);
+      max-width: 90%; /* Adjusted to 90% for a wider iframe */
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    iframe {
+      width: 100%;
+      min-height: 150px;
+      border: 0;
+    }
+  </style>
 </head>
-<body>
-    <header>
-        <h1>GGRadioFM - Your Station, Your Music</h1>
-    </header>
 
-    <nav>
-        <a href="#">Request Song</a>
-        <a href="#">Discord</a>
-        <a href="#">Donate</a>
-    </nav>
-            
-    <div class="iframe-container">
-        <iframe src="https://panel.deepradio.co.uk/public/ggradiofm/embed-requests?theme=dark" frameborder="0" allowtransparency="true" style="width: 100%; min-height: 850px; border: 0;"></iframe>
-    </div>
-  <body>
+<body>
+  <header>
+    <h1>GGRadioFM - Your Station, Your Music</h1>
+  </header>
+
+  <nav>
+    <a href="#">Request Song</a>
+    <a href="#">Discord</a>
+    <a href="#">Donate</a>
+  </nav>
+
+  <div class="iframe-container">
+    <iframe src="https://panel.deepradio.co.uk/public/ggradiofm/embed-requests?theme=dark" frameborder="0" allowtransparency="true" style="width: 100%; min-height: 850px; border: 0;"></iframe>
+  </div>
+</body>
