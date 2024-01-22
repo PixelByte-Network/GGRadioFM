@@ -58,15 +58,9 @@
             margin-bottom: 20px;
         }
 
-        iframe.player {
+        iframe {
             width: 100%;
-            min-height: 150px; /* Keep the player height the same */
-            border: 0;
-        }
-
-        iframe.request-box {
-            width: 100%;
-            min-height: 500px; /* Increase the height for the request box */
+            min-height: 150px;
             border: 0;
         }
 
@@ -87,11 +81,7 @@
     </nav>
 
     <div class="iframe-container">
-        <iframe class="player" src="https://panel.deepradio.co.uk/public/ggradiofm/embed?theme=dark" frameborder="0" allowtransparency="true"></iframe>
-    </div>
-
-    <div class="iframe-container">
-        <iframe class="request-box" src="https://panel.deepradio.co.uk/public/ggradiofm/embed-requests?theme=dark" frameborder="0" allowtransparency="true" style="border: 0;"></iframe>
+        <iframe src="https://panel.deepradio.co.uk/public/ggradiofm/embed?theme=dark" frameborder="0" allowtransparency="true"></iframe>
     </div>
 
     <footer>
