@@ -78,7 +78,7 @@
         }
     </style>
 </head>
-        <script>
+    <script>
         document.addEventListener('DOMContentLoaded', function () {
             // Function to make the HTTP request
             function getRequest() {
@@ -93,11 +93,9 @@
                         // Get the current listeners count
                         var listenersCount = response.mounts[0].listeners.current;
 
-                        // Update the text in the iframe
-                        var iframe = document.querySelector('iframe');
-                        if (iframe) {
-                            iframe.contentDocument.body.innerText = 'Listeners: ' + listenersCount;
-                        }
+                        // Update the text outside the iframe
+                        var listenersText = 'Listeners: ' + listenersCount;
+                        document.getElementById('listeners-display').innerText = listenersText;
                     } else {
                         console.error('Failed to make the request. Status: ' + xhr.status);
                     }
@@ -131,7 +129,7 @@
     <div class="iframe-container">
         <iframe src="https://panel.deepradio.co.uk/public/ggradiofm/embed?theme=dark" frameborder="0" allowtransparency="true"></iframe>
     </div>
-
+    <div id="listeners-display">Listeners: Loading...</div>
     <footer>
         <p>&copy; 2024 GGRadioFM. All rights reserved.</p>
     </footer>
