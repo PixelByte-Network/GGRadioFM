@@ -22,18 +22,16 @@
             width: 100%;
             padding: 10px;
             text-align: center;
-            position: fixed;
         }
 
         header h1 {
-            font-size: 36px;
+            font-size: 24px;
             margin-bottom: 10px;
-            margin-right: auto; /* Move GGRadioFM text to the left */
         }
 
         nav {
             display: flex;
-            justify-content: flex-end; /* Align links to the right */
+            justify-content: center;
             width: 100%;
             background-color: rgba(0, 0, 0, 0.7);
             padding: 10px;
@@ -43,7 +41,7 @@
             color: #fff;
             text-decoration: none;
             font-size: 18px;
-            margin-left: 20px; /* Adjust spacing between links */
+            margin: 0 15px;
         }
 
         .iframe-container {
@@ -53,7 +51,8 @@
             border-radius: 10px;
             background-color: rgba(0, 0, 0, 0.7);
             max-width: 80%;
-            margin-bottom: 80px; /* Adjust margin to create space for the fixed header */
+            margin-top: 20px; /* Adjust margin to create space for the player */
+            margin-bottom: 20px;
         }
 
         iframe {
@@ -72,18 +71,19 @@
         <iframe src="https://panel.deepradio.co.uk/public/ggradiofm/embed?theme=dark" frameborder="0" allowtransparency="true"></iframe>
     </div>
 
-    <header>
-        <h1>GGRadioFM</h1>
-    </header>
-
     <nav>
         <a href="#">Request Song</a>
         <a href="#">Discord</a>
         <a href="#">Donate</a>
     </nav>
 
+    <header>
+        <h1>GGRadioFM - Your Station, Your Music</h1>
+    </header>
+
     <footer>
         <p>&copy; 2024 GGRadioFM. All rights reserved.</p>
     </footer>
 </body>
 </html>
+
