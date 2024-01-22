@@ -17,6 +17,34 @@
             min-height: 100vh;
         }
 
+        header, footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 0 15px;
+        }
+
         .iframe-container {
             border: 2px solid #fff;
             padding: 20px;
@@ -34,39 +62,16 @@
             border: 0;
         }
 
-        nav {
-            display: flex;
-            justify-content: center;
-            width: 100%;
-            background-color: rgba(0, 0, 0, 0.7);
-            padding: 10px;
-        }
-
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 18px;
-            margin: 0 15px;
-        }
-
-        header, footer {
-            background-color: rgba(0, 0, 0, 0.8);
-            width: 100%;
-            padding: 10px;
-            text-align: center;
-        }
-
-        header h1 {
-            font-size: 24px;
-            margin-bottom: 10px;
-        }
-
         footer {
             margin-top: auto;
         }
     </style>
 </head>
 <body>
+    <header>
+        <h1>GGRadioFM - Your Station, Your Music</h1>
+    </header>
+
     <nav>
         <a href="#">Request Song</a>
         <a href="#">Discord</a>
@@ -76,10 +81,6 @@
     <div class="iframe-container">
         <iframe src="https://panel.deepradio.co.uk/public/ggradiofm/embed?theme=dark" frameborder="0" allowtransparency="true"></iframe>
     </div>
-
-    <header>
-        <h1>GGRadioFM - Your Station, Your Music</h1>
-    </header>
 
     <footer>
         <p>&copy; 2024 GGRadioFM. All rights reserved.</p>
