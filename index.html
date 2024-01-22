@@ -28,15 +28,12 @@
         header h1 {
             font-size: 36px;
             margin-bottom: 10px;
-        }
-
-        header h2 {
-            font-size: 18px;
+            margin-right: auto; /* Move GGRadioFM text to the left */
         }
 
         nav {
             display: flex;
-            justify-content: space-around;
+            justify-content: flex-end; /* Align links to the right */
             width: 100%;
             background-color: rgba(0, 0, 0, 0.7);
             padding: 10px;
@@ -46,6 +43,7 @@
             color: #fff;
             text-decoration: none;
             font-size: 18px;
+            margin-left: 20px; /* Adjust spacing between links */
         }
 
         .iframe-container {
@@ -55,7 +53,7 @@
             border-radius: 10px;
             background-color: rgba(0, 0, 0, 0.7);
             max-width: 80%;
-            margin-top: 80px;
+            margin-bottom: 80px; /* Adjust margin to create space for the fixed header */
         }
 
         iframe {
@@ -76,7 +74,6 @@
 
     <header>
         <h1>GGRadioFM</h1>
-        <h2>Your Station, Your Music</h2>
     </header>
 
     <nav>
