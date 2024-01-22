@@ -87,6 +87,7 @@
 
                 xhr.onload = function () {
                     if (xhr.status >= 200 && xhr.status < 300) {
+                        console.log('got data about listeners')
                         // Parse the JSON response
                         var response = JSON.parse(xhr.responseText);
 
