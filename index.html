@@ -14,6 +14,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            min-height: 100vh;
         }
 
         header, footer {
@@ -21,6 +22,7 @@
             width: 100%;
             padding: 10px;
             text-align: center;
+            position: fixed;
         }
 
         header h1 {
@@ -53,7 +55,7 @@
             border-radius: 10px;
             background-color: rgba(0, 0, 0, 0.7);
             max-width: 80%;
-            margin-top: 20px;
+            margin-top: 80px;
         }
 
         iframe {
@@ -68,6 +70,10 @@
     </style>
 </head>
 <body>
+    <div class="iframe-container">
+        <iframe src="https://panel.deepradio.co.uk/public/ggradiofm/embed?theme=dark" frameborder="0" allowtransparency="true"></iframe>
+    </div>
+
     <header>
         <h1>GGRadioFM</h1>
         <h2>Your Station, Your Music</h2>
@@ -78,10 +84,6 @@
         <a href="#">Discord</a>
         <a href="#">Donate</a>
     </nav>
-
-    <div class="iframe-container">
-        <iframe src="https://panel.deepradio.co.uk/public/ggradiofm/embed?theme=dark" frameborder="0" allowtransparency="true"></iframe>
-    </div>
 
     <footer>
         <p>&copy; 2024 GGRadioFM. All rights reserved.</p>
