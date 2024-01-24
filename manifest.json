@@ -1,4 +1,4 @@
-{
+a{
   "background_color": "#ffffff",
   "description": "GGRadioFM: Immerse yourself in the vibrant world of pop music with our 24/7 radio station. Enjoy a non-stop playlist of the latest hits and timeless classics. Elevate your music experience with GGRadioFM, your go-to destination for pop music enthusiasts.",
   "dir": "ltr",
@@ -22,7 +22,6 @@
       "src": "img/pwalogo.png",
       "sizes": "512x512",
       "type": "image/x-icon",
-      "purpose": "maskable"
        }
   ],
   "id": "ggradio.pro",
